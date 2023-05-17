@@ -1,0 +1,680 @@
+[
+    {
+        "id": "58517bf7c02c3150",
+        "type": "tab",
+        "label": "플로우 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "83c9f09a7e4a9fdb",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "05058b10e9cfec8f",
+        "type": "ui_group",
+        "name": "밝기",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "13071c21cc976d6d",
+        "type": "ui_group",
+        "name": "불쾌지수",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b75fc0c7836565d3",
+        "type": "ui_group",
+        "name": "환경",
+        "tab": "2176b084fb4c36d3",
+        "order": 2,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b5a9b5569dbcccd5",
+        "type": "ui_group",
+        "name": "Group 3",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "2176b084fb4c36d3",
+        "type": "ui_tab",
+        "name": "멀티캠퍼스 역삼 701호",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a4665b3a700232f0",
+        "type": "ui_group",
+        "name": "전등",
+        "tab": "2176b084fb4c36d3",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9d803ef7bc3dec1c",
+        "type": "ui_spacer",
+        "z": "58517bf7c02c3150",
+        "name": "spacer",
+        "group": "a4665b3a700232f0",
+        "order": 1,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "5c0acd9cf6281cb4",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "70.12.227.42",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "a5441b94f13451e1",
+        "type": "ui_gauge",
+        "z": "58517bf7c02c3150",
+        "name": "",
+        "group": "b75fc0c7836565d3",
+        "order": 5,
+        "width": 12,
+        "height": 5,
+        "gtype": "gage",
+        "title": "불쾌 지수",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 800,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "99ccf03e0eafbd05",
+        "type": "ui_chart",
+        "z": "58517bf7c02c3150",
+        "name": "",
+        "group": "b75fc0c7836565d3",
+        "order": 2,
+        "width": 6,
+        "height": 5,
+        "label": "습도(%)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 400,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bdccf7f19d6867cb",
+        "type": "ui_chart",
+        "z": "58517bf7c02c3150",
+        "name": "",
+        "group": "b75fc0c7836565d3",
+        "order": 1,
+        "width": 6,
+        "height": 5,
+        "label": "온도(oC)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "-40",
+        "ymax": "80",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 220,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "443497dd5891b30c",
+        "type": "ui_switch",
+        "z": "58517bf7c02c3150",
+        "name": "",
+        "label": "에어컨 전원",
+        "tooltip": "",
+        "group": "b75fc0c7836565d3",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "ON",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "OFF",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 250,
+        "y": 460,
+        "wires": [
+            [
+                "a7754f169853d12f"
+            ]
+        ]
+    },
+    {
+        "id": "e35c3633ceb6121b",
+        "type": "ui_switch",
+        "z": "58517bf7c02c3150",
+        "name": "",
+        "label": "난방 전원",
+        "tooltip": "",
+        "group": "b75fc0c7836565d3",
+        "order": 4,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "ON",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "OFF",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 420,
+        "y": 460,
+        "wires": [
+            [
+                "30d6ee202839ed04"
+            ]
+        ]
+    },
+    {
+        "id": "5e4b6a9d2be9472f",
+        "type": "ui_button",
+        "z": "58517bf7c02c3150",
+        "name": "",
+        "group": "a4665b3a700232f0",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "ON",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "ON",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 170,
+        "y": 80,
+        "wires": [
+            [
+                "a68da6172a37030d"
+            ]
+        ]
+    },
+    {
+        "id": "3611dfd2a5c61eee",
+        "type": "ui_button",
+        "z": "58517bf7c02c3150",
+        "name": "",
+        "group": "a4665b3a700232f0",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "OFF",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "OFF",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 170,
+        "y": 120,
+        "wires": [
+            [
+                "08b56f5e1c8ff756"
+            ]
+        ]
+    },
+    {
+        "id": "c5ed98587ab23a2f",
+        "type": "ui_slider",
+        "z": "58517bf7c02c3150",
+        "name": "",
+        "label": "밝기",
+        "tooltip": "",
+        "group": "a4665b3a700232f0",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "className": "",
+        "x": 170,
+        "y": 180,
+        "wires": [
+            [
+                "a80349c813120c19"
+            ]
+        ]
+    },
+    {
+        "id": "28258196d4384bd6",
+        "type": "mqtt in",
+        "z": "58517bf7c02c3150",
+        "name": "",
+        "topic": "home/te",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "5c0acd9cf6281cb4",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 80,
+        "y": 300,
+        "wires": [
+            [
+                "bdccf7f19d6867cb",
+                "844644d4bd55fa8b"
+            ]
+        ]
+    },
+    {
+        "id": "e16ac1a104689bb1",
+        "type": "mqtt in",
+        "z": "58517bf7c02c3150",
+        "name": "",
+        "topic": "home/hu",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "5c0acd9cf6281cb4",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 260,
+        "y": 300,
+        "wires": [
+            [
+                "99ccf03e0eafbd05",
+                "39149472c8c53e0b"
+            ]
+        ]
+    },
+    {
+        "id": "a68da6172a37030d",
+        "type": "mqtt out",
+        "z": "58517bf7c02c3150",
+        "name": "",
+        "topic": "room/light/ON",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "5c0acd9cf6281cb4",
+        "x": 360,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "08b56f5e1c8ff756",
+        "type": "mqtt out",
+        "z": "58517bf7c02c3150",
+        "name": "",
+        "topic": "room/light/OFF",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "5c0acd9cf6281cb4",
+        "x": 360,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "a7754f169853d12f",
+        "type": "mqtt out",
+        "z": "58517bf7c02c3150",
+        "name": "",
+        "topic": "room/airc",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "5c0acd9cf6281cb4",
+        "x": 240,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "30d6ee202839ed04",
+        "type": "mqtt out",
+        "z": "58517bf7c02c3150",
+        "name": "",
+        "topic": "room/heat",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "5c0acd9cf6281cb4",
+        "x": 420,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "a80349c813120c19",
+        "type": "mqtt out",
+        "z": "58517bf7c02c3150",
+        "name": "",
+        "topic": "room/light",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "5c0acd9cf6281cb4",
+        "x": 360,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "e8e7efd057d21d5e",
+        "type": "mqtt in",
+        "z": "58517bf7c02c3150",
+        "name": "",
+        "topic": "home/an",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "5c0acd9cf6281cb4",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 640,
+        "y": 380,
+        "wires": [
+            [
+                "a5441b94f13451e1"
+            ]
+        ]
+    },
+    {
+        "id": "844644d4bd55fa8b",
+        "type": "function",
+        "z": "58517bf7c02c3150",
+        "name": "temp glo set",
+        "func": "global.set(\"te\",msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "39149472c8c53e0b",
+        "type": "function",
+        "z": "58517bf7c02c3150",
+        "name": "hu set",
+        "func": "//global.set(\"hu\", msg.payload)\nvar hum = msg.payload;\nvar tem=global.get(\"te\");\nvar ret = (1.8*tem)-(0.55*(1-hum/100)*((1.8*tem)-26)+32);\nmsg.payload=ret;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 640,
+        "wires": [
+            [
+                "dc67c9dd214b70c3"
+            ]
+        ]
+    },
+    {
+        "id": "dc67c9dd214b70c3",
+        "type": "debug",
+        "z": "58517bf7c02c3150",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 740,
+        "wires": []
+    }
+]
